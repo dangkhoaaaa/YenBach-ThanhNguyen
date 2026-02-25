@@ -271,9 +271,9 @@ export default function WeddingCardPage() {
 
           <WeddingCalendar weddingDate="31.03" weddingYear="2025" />
 
-          <div className="mt-8 flex justify-center">
+          {/* <div className="mt-8 flex justify-center">
             <InviteQr value={INVITE_URL} />
-          </div>
+          </div> */}
         </div>
       </section>
 
