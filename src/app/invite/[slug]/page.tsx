@@ -5,9 +5,12 @@ import Image from "next/image";
 import { TEMPLATE2_DECORATIVE_IMAGES } from "@/app/templates/template2/constants";
 import { AnimatedText } from "@/app/templates/template2/components/AnimatedText";
 import { AnimatedImage } from "@/app/templates/template2/components/AnimatedImage";
+import { InviteQr } from "@/app/components/InviteQr";
 
 const MAIN_PHOTO_URL =
   "https://res.cloudinary.com/dpxx4z2on/image/upload/v1766912091/eventcards/rmrifoojfdw4dhs29bxn.webp";
+
+const INVITE_URL = "https://yen-bach-thanh-nguyen.vercel.app/";
 
 export default function WeddingCardPage() {
   const [isEnvelopeOpen, setIsEnvelopeOpen] = useState(false);
@@ -216,7 +219,7 @@ export default function WeddingCardPage() {
         </div>
       </section>
 
-      {/* Section 3: Ảnh chính + ngày giờ + calendar */}
+      {/* Section 3: Ảnh chính + ngày giờ + calendar + QR */}
       <section className="min-h-screen bg-gradient-to-br from-pink-50 to-purple-50 flex items-center justify-center p-4 overflow-hidden relative">
         <div className="absolute inset-0 opacity-15">
           <Image
@@ -267,6 +270,10 @@ export default function WeddingCardPage() {
           />
 
           <WeddingCalendar weddingDate="31.03" weddingYear="2025" />
+
+          <div className="mt-8 flex justify-center">
+            <InviteQr value={INVITE_URL} />
+          </div>
         </div>
       </section>
 
