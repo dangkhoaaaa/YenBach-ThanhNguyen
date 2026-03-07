@@ -1,13 +1,18 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useRef } from "react";
+import { useCallback, useEffect, useRef } from "react";
 
 const PHOTOS = [
-  "https://res.cloudinary.com/dpxx4z2on/image/upload/v1772207777/z7570918792883_5621d56f7f43da5938ce79b03853e62f_smk8on.jpg",
-  "https://res.cloudinary.com/dpxx4z2on/image/upload/v1772207776/z7570783555454_22b1cf9bac8a26dc14cd32099080250f_kirilb.jpg",
-  "https://res.cloudinary.com/dpxx4z2on/image/upload/v1772207777/z7570829125601_4c1df425d1d7f5564206c322f180efc8_jbpqro.jpg",
-  "https://res.cloudinary.com/dpxx4z2on/image/upload/v1772207776/z7570868697626_007b2e154da2015ba876d2717f05f8d0_qlxhcc.jpg",
+  "https://res.cloudinary.com/dpxx4z2on/image/upload/v1772868227/1_xrmtuz.jpg",
+  "https://res.cloudinary.com/dpxx4z2on/image/upload/v1772868228/2_s2hwqk.jpg",
+  "https://res.cloudinary.com/dpxx4z2on/image/upload/v1772868228/3_kcjeia.jpg",
+  "https://res.cloudinary.com/dpxx4z2on/image/upload/v1772868227/4_imyvlu.jpg",
+  "https://res.cloudinary.com/dpxx4z2on/image/upload/v1772868227/5_jx44zg.jpg",
+  "https://res.cloudinary.com/dpxx4z2on/image/upload/v1772868227/6_wztgv2.jpg",
+  "https://res.cloudinary.com/dpxx4z2on/image/upload/v1772868227/7_byha4k.jpg",
+  "https://res.cloudinary.com/dpxx4z2on/image/upload/v1772868226/8_ya2pky.jpg",
+  "https://res.cloudinary.com/dpxx4z2on/image/upload/v1772868225/9_zugtii.jpg",
 ];
 
 const MUSIC_URL =
@@ -23,16 +28,34 @@ export default function WeddingCardPage() {
     audio.loop = true;
     audioRef.current = audio;
 
-    // Tự play ngay lần đầu nếu được browser cho phép
-    audio.play().catch(() => {
-      // ignore autoplay errors
-    });
-
     return () => {
       audio.pause();
       audioRef.current = null;
     };
   }, []);
+
+  const handleFirstInteraction = useCallback(() => {
+    if (audioRef.current) {
+      audioRef.current.play().catch(() => {});
+    }
+  }, []);
+
+  useEffect(() => {
+    const play = () => {
+      handleFirstInteraction();
+      document.removeEventListener("click", play);
+      document.removeEventListener("touchstart", play);
+      document.removeEventListener("keydown", play);
+    };
+    document.addEventListener("click", play, { once: true });
+    document.addEventListener("touchstart", play, { once: true });
+    document.addEventListener("keydown", play, { once: true });
+    return () => {
+      document.removeEventListener("click", play);
+      document.removeEventListener("touchstart", play);
+      document.removeEventListener("keydown", play);
+    };
+  }, [handleFirstInteraction]);
 
   return (
     <main className="min-h-screen bg-white flex flex-col items-center justify-start relative">
