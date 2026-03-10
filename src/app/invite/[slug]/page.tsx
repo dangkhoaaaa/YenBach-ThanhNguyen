@@ -6,12 +6,13 @@ import { useCallback, useEffect, useRef } from "react";
 const PHOTOS = [
   "https://res.cloudinary.com/dpxx4z2on/image/upload/v1772868227/1_xrmtuz.jpg",
   "https://res.cloudinary.com/dpxx4z2on/image/upload/v1772868228/2_s2hwqk.jpg",
+  "https://res.cloudinary.com/dpxx4z2on/image/upload/v1773161932/4_1_dx0yib.jpg",
   "https://res.cloudinary.com/dpxx4z2on/image/upload/v1772868228/3_kcjeia.jpg",
-  "https://res.cloudinary.com/dpxx4z2on/image/upload/v1772868227/4_imyvlu.jpg",
   "https://res.cloudinary.com/dpxx4z2on/image/upload/v1772868227/5_jx44zg.jpg",
   "https://res.cloudinary.com/dpxx4z2on/image/upload/v1772868227/6_wztgv2.jpg",
   "https://res.cloudinary.com/dpxx4z2on/image/upload/v1772868227/7_byha4k.jpg",
   "https://res.cloudinary.com/dpxx4z2on/image/upload/v1772868226/8_ya2pky.jpg",
+  "https://res.cloudinary.com/dpxx4z2on/image/upload/v1773161913/9_1_ljvu9k.jpg",
   "https://res.cloudinary.com/dpxx4z2on/image/upload/v1772868225/9_zugtii.jpg",
 ];
 
