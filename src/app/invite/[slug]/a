@@ -1,0 +1,156 @@
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preload" as="image" href="/photos/heritage/1.jpg"><link rel="preload" as="image" href="/photos/heritage/2.jpg"><link rel="preload" as="image" href="/photos/heritage/3.jpg"><link rel="preload" as="image" href="/photos/heritage/4.jpg"><link rel="preload" as="image" href="/photos/heritage/5.jpg"><link rel="preload" as="image" href="/photos/heritage/6.jpg"><link rel="preload" as="image" href="/photos/heritage/7.jpg"><link rel="preload" as="image" href="/photos/heritage/8.jpg"><link rel="preload" as="image" href="/photos/heritage/9.jpg"><link rel="preload" as="image" href="/photos/heritage/10.jpg"><link rel="stylesheet" href="/_next/static/css/9f91f3d6bd8aaef5.css" data-precedence="next"><link rel="stylesheet" href="/_next/static/css/b7ff4abf24a87933.css" data-precedence="next"><link rel="preload" as="script" fetchpriority="low" href="/_next/static/chunks/webpack-4b8f35d947c657af.js"><script src="/_next/static/chunks/87c73c54-b6be61a4b6f029b1.js" async=""></script><script src="/_next/static/chunks/61968-fa7a3ed60d755977.js" async=""></script><script src="/_next/static/chunks/main-app-2251a83c4419b91b.js" async=""></script><link rel="preload" as="image" href="/photos/heritage/11.jpg"><link rel="preload" as="image" href="/photos/heritage/12.jpg"><link rel="preload" as="image" href="/photos/heritage/13.jpg"><link rel="preload" as="image" href="/photos/heritage/14.jpg"><link rel="preload" as="image" href="/photos/heritage/15.jpg"><link rel="preload" as="image" href="/photos/heritage/16.jpg"><title>Scroll velocity: 3D planes — Motion for React Example</title><meta name="description" content="A 3D carousel with scroll velocity-linked wave effect using Motion for React. View and copy the source code, learn which APIs are used and read the documentation."><meta name="creator" content="Motion"><meta name="publisher" content="Motion"><link rel="canonical" href="https://examples.motion.dev/react/scroll-velocity-linked-offset"><meta property="og:title" content="Scroll velocity: 3D planes"><meta property="og:description" content="A 3D carousel with scroll velocity-linked wave effect using Motion for React. View and copy the source code, learn which APIs are used and read the documentation."><meta property="og:site_name" content="Motion examples"><meta property="og:image" content="https://examples.motion.dev/social/react/scroll-velocity-linked-offset.png"><meta property="og:image:secure_url" content="/social/react/scroll-velocity-linked-offset.png"><meta property="og:image:alt" content="Scroll velocity: 3D planes"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@mattgperry"><meta name="twitter:creator" content="@mattgperry"><meta name="twitter:title" content="Scroll velocity: 3D planes"><meta name="twitter:description" content="A 3D carousel with scroll velocity-linked wave effect using Motion for React. View and copy the source code, learn which APIs are used and read the documentation."><meta name="twitter:image" content="https://examples.motion.dev/social/react/scroll-velocity-linked-offset.png"><meta name="twitter:image:secure_url" content="/social/react/scroll-velocity-linked-offset.png"><meta name="twitter:image:alt" content="Scroll velocity: 3D planes"><meta name="twitter:image:width" content="1200"><meta name="twitter:image:height" content="630"><link rel="icon" href="/icon.png?2869c5a378bc205a" type="image/png" sizes="64x64"><script src="/_next/static/chunks/polyfills-42372ed130431b0a.js" nomodule=""></script></head><body><div hidden=""><!--$--><!--/$--></div><div id="page-container" class="theme-dark"><header id="site-header"><div></div><section class="sandbox-controls"><button class="primary-action plausible-event-name=Click+Cursor" tabindex="0" style="transform: none;"><svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 466.73 532.09" style="fill:currentColor"><path d="M457.43,125.94L244.42,2.96c-6.84-3.95-15.28-3.95-22.12,0L9.3,125.94c-5.75,3.32-9.3,9.46-9.3,16.11v247.99c0,6.65,3.55,12.79,9.3,16.11l213.01,122.98c6.84,3.95,15.28,3.95,22.12,0l213.01-122.98c5.75-3.32,9.3-9.46,9.3-16.11v-247.99c0-6.65-3.55-12.79-9.3-16.11h-.01ZM444.05,151.99l-205.63,356.16c-1.39,2.4-5.06,1.42-5.06-1.36v-233.21c0-4.66-2.49-8.97-6.53-11.31L24.87,145.67c-2.4-1.39-1.42-5.06,1.36-5.06h411.26c5.84,0,9.49,6.33,6.57,11.39h-.01Z"></path></svg> Open in Cursor</button><button class="primary-action plausible-event-name=Click+Source" tabindex="0" style="transform: none;"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg> Source</button><a href="https://motion.dev/tutorials/react-scroll-velocity-linked-offset" target="_parent" class="plausible-event-name=Click+Tutorial" aria-label="Tutorial" tabindex="0" style="transform: none;"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path><path d="M22 10v6"></path><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path></svg><span class="control-label">Tutorial</span></a></section></header><main id="sandbox"><div class="container"><div class="header"><div class="title">HERITAGE FW25/26</div><div class="title title-collection">COLLECTION<sup class="title-count">(16)</sup></div></div><div class="hint">scroll to surf</div><div class="viewport"><div class="planes-container"><div class="plane" style="z-index: 1; filter: brightness(1); transform: translate3d(-1708px, 597.8px, 2049.6px) rotateY(-50deg);"><div class="plane-image-container"><img alt="Plane 0" class="plane-image" draggable="false" src="/photos/heritage/1.jpg"></div><div class="plane-index">00</div></div><div class="plane" style="z-index: 1; filter: brightness(1); transform: translate3d(-1468px, 513.8px, 1761.6px) rotateY(-50deg);"><div class="plane-image-container"><img alt="Plane 1" class="plane-image" draggable="false" src="/photos/heritage/2.jpg"></div><div class="plane-index">01</div></div><div class="plane" style="z-index: 1; filter: brightness(1); transform: translate3d(-1228px, 429.8px, 1473.6px) rotateY(-50deg);"><div class="plane-image-container"><img alt="Plane 2" class="plane-image" draggable="false" src="/photos/heritage/3.jpg"></div><div class="plane-index">02</div></div><div class="plane" style="z-index: 1; filter: brightness(1); transform: translate3d(-988px, 345.8px, 1185.6px) rotateY(-50deg);"><div class="plane-image-container"><img alt="Plane 3" class="plane-image" draggable="false" src="/photos/heritage/4.jpg"></div><div class="plane-index">03</div></div><div class="plane" style="z-index: 1; filter: brightness(1); transform: translate3d(-748px, 261.8px, 897.6px) rotateY(-50deg);"><div class="plane-image-container"><img alt="Plane 4" class="plane-image" draggable="false" src="/photos/heritage/5.jpg"></div><div class="plane-index">04</div></div><div class="plane" style="z-index: 1; filter: brightness(1); transform: translate3d(-508px, 177.8px, 609.6px) rotateY(-50deg);"><div class="plane-image-container"><img alt="Plane 5" class="plane-image" draggable="false" src="/photos/heritage/6.jpg"></div><div class="plane-index">05</div></div><div class="plane" style="z-index: 1; filter: brightness(1); transform: translate3d(-268px, 93.8px, 321.6px) rotateY(-50deg);"><div class="plane-image-container"><img alt="Plane 6" class="plane-image" draggable="false" src="/photos/heritage/7.jpg"></div><div class="plane-index">06</div></div><div class="plane" style="z-index: 1; filter: brightness(1); transform: translate3d(-27.9999px, 9.79997px, 33.5999px) rotateY(-50deg);"><div class="plane-image-container"><img alt="Plane 7" class="plane-image" draggable="false" src="/photos/heritage/8.jpg"></div><div class="plane-index">07</div></div><div class="plane" style="z-index: 1; filter: brightness(1); transform: translate3d(212px, -74.2px, -254.4px) rotateY(-50deg);"><div class="plane-image-container"><img alt="Plane 8" class="plane-image" draggable="false" src="/photos/heritage/9.jpg"></div><div class="plane-index">08</div></div><div class="plane" style="z-index: 1; filter: brightness(1); transform: translate3d(452px, -158.2px, -542.4px) rotateY(-50deg);"><div class="plane-image-container"><img alt="Plane 9" class="plane-image" draggable="false" src="/photos/heritage/10.jpg"></div><div class="plane-index">09</div></div><div class="plane" style="z-index: 1; filter: brightness(1); transform: translate3d(692px, -242.2px, -830.4px) rotateY(-50deg);"><div class="plane-image-container"><img alt="Plane 10" class="plane-image" draggable="false" src="/photos/heritage/11.jpg"></div><div class="plane-index">10</div></div><div class="plane" style="z-index: 1; filter: brightness(1); transform: translate3d(932px, -326.2px, -1118.4px) rotateY(-50deg);"><div class="plane-image-container"><img alt="Plane 11" class="plane-image" draggable="false" src="/photos/heritage/12.jpg"></div><div class="plane-index">11</div></div><div class="plane" style="z-index: 1; filter: brightness(1); transform: translate3d(1172px, -410.2px, -1406.4px) rotateY(-50deg);"><div class="plane-image-container"><img alt="Plane 12" class="plane-image" draggable="false" src="/photos/heritage/13.jpg"></div><div class="plane-index">12</div></div><div class="plane" style="z-index: 1; filter: brightness(1); transform: translate3d(1412px, -494.2px, -1694.4px) rotateY(-50deg);"><div class="plane-image-container"><img alt="Plane 13" class="plane-image" draggable="false" src="/photos/heritage/14.jpg"></div><div class="plane-index">13</div></div><div class="plane" style="z-index: 1; filter: brightness(1); transform: translate3d(1652px, -578.2px, -1982.4px) rotateY(-50deg);"><div class="plane-image-container"><img alt="Plane 14" class="plane-image" draggable="false" src="/photos/heritage/15.jpg"></div><div class="plane-index">14</div></div><div class="plane" style="z-index: 1; filter: brightness(1); transform: translate3d(1892px, -662.2px, -2270.4px) rotateY(-50deg);"><div class="plane-image-container"><img alt="Plane 15" class="plane-image" draggable="false" src="/photos/heritage/16.jpg"></div><div class="plane-index">15</div></div><div class="plane" style="z-index: 1; filter: brightness(1); transform: translate3d(2132px, -746.2px, -2558.4px) rotateY(-50deg);"><div class="plane-image-container"><img alt="Plane 16" class="plane-image" draggable="false" src="/photos/heritage/1.jpg"></div><div class="plane-index">16</div></div><div class="plane" style="z-index: 1; filter: brightness(1); transform: translate3d(2372px, -830.2px, -2846.4px) rotateY(-50deg);"><div class="plane-image-container"><img alt="Plane 17" class="plane-image" draggable="false" src="/photos/heritage/2.jpg"></div><div class="plane-index">17</div></div><div class="plane" style="z-index: 1; filter: brightness(1); transform: translate3d(2612px, -914.2px, -3134.4px) rotateY(-50deg);"><div class="plane-image-container"><img alt="Plane 18" class="plane-image" draggable="false" src="/photos/heritage/3.jpg"></div><div class="plane-index">18</div></div><div class="plane" style="z-index: 1; filter: brightness(1); transform: translate3d(2852px, -998.2px, -3422.4px) rotateY(-50deg);"><div class="plane-image-container"><img alt="Plane 19" class="plane-image" draggable="false" src="/photos/heritage/4.jpg"></div><div class="plane-index">19</div></div><div class="plane" style="z-index: 1; filter: brightness(1); transform: translate3d(3092px, -1082.2px, -3710.4px) rotateY(-50deg);"><div class="plane-image-container"><img alt="Plane 20" class="plane-image" draggable="false" src="/photos/heritage/5.jpg"></div><div class="plane-index">20</div></div><div class="plane" style="z-index: 1; filter: brightness(1); transform: translate3d(-2908px, 1017.8px, 3489.6px) rotateY(-50deg);"><div class="plane-image-container"><img alt="Plane 21" class="plane-image" draggable="false" src="/photos/heritage/6.jpg"></div><div class="plane-index">21</div></div><div class="plane" style="z-index: 1; filter: brightness(1); transform: translate3d(-2668px, 933.8px, 3201.6px) rotateY(-50deg);"><div class="plane-image-container"><img alt="Plane 22" class="plane-image" draggable="false" src="/photos/heritage/7.jpg"></div><div class="plane-index">22</div></div><div class="plane" style="z-index: 1; filter: brightness(1); transform: translate3d(-2428px, 849.8px, 2913.6px) rotateY(-50deg);"><div class="plane-image-container"><img alt="Plane 23" class="plane-image" draggable="false" src="/photos/heritage/8.jpg"></div><div class="plane-index">23</div></div><div class="plane" style="z-index: 1; filter: brightness(1); transform: translate3d(-2188px, 765.8px, 2625.6px) rotateY(-50deg);"><div class="plane-image-container"><img alt="Plane 24" class="plane-image" draggable="false" src="/photos/heritage/9.jpg"></div><div class="plane-index">24</div></div><div class="plane" style="z-index: 1; filter: brightness(1); transform: translate3d(-1948px, 681.8px, 2337.6px) rotateY(-50deg);"><div class="plane-image-container"><img alt="Plane 25" class="plane-image" draggable="false" src="/photos/heritage/10.jpg"></div><div class="plane-index">25</div></div></div></div></div><style>
+            @import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500;600&display=swap');
+
+            body {
+                overflow: hidden;
+            }
+
+            .container {
+                width: 100vw;
+                height: 100vh;
+                overflow: hidden;
+                background: black;
+                touch-action: none;
+                font-family: "Geist", sans-serif;
+            }
+
+            .container * {
+                font-family: inherit;
+            }
+
+            .header {
+                position: absolute;
+                z-index: 50;
+                font-weight: 600;
+                letter-spacing: -0.02em;
+                top: max(90px, 3vw);
+                left: 3vw;
+            }
+
+            .title {
+                color: var(--white);
+                font-size: clamp(32px, 5vw, 64px);
+                line-height: 0.9;
+                font-weight: normal;
+                letter-spacing: -0.02em;
+                margin-left: 4vw;
+            }
+
+            .title-collection {
+                margin-left: 0;
+            }
+
+            .title-count {
+                font-size: clamp(10px, 0.4em, 0.4em);
+                font-weight: 600;
+                letter-spacing: normal;
+                font-variant-numeric: tabular-nums;
+                margin-left: 4px;
+                position: relative;
+                top: 0.65em;
+                vertical-align: top;
+                line-height: 0;
+            }
+
+            .hint {
+                position: absolute;
+                z-index: 50;
+                display: flex;
+                align-items: center;
+                font-family: "Geist Mono", monospace;
+                text-transform: uppercase;
+                bottom: 3vw;
+                right: 3vw;
+                font-size: 10px;
+                letter-spacing: 0.05em;
+                color: var(--white);
+            }
+
+            .viewport {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                perspective: 2000px;
+                perspective-origin: 10% 10%;
+            }
+
+            .planes-container {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transform-style: preserve-3d;
+                transform: translateY(100px);
+            }
+
+            .plane {
+                width: 320px;
+                height: 384px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: var(--white);
+                font-size: 48px;
+                font-weight: bold;
+                box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+                position: absolute;
+                transform-style: preserve-3d;
+                transition: filter 0.2s ease;
+            }
+
+            .plane-image-container {
+                position: absolute;
+                inset: 0;
+                overflow: hidden;
+            }
+
+            .plane-image {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .plane-index {
+                position: absolute;
+                font-family: "Geist Mono", monospace;
+                color: var(--white);
+                top: -24px;
+                left: 0;
+                font-size: 10px;
+                font-weight: normal;
+                letter-spacing: 0.05em;
+            }
+
+            .label-container {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                pointer-events: none;
+                left: 100%;
+                top: 50%;
+                margin-left: 12px;
+            }
+
+            .label-line {
+                width: 120px;
+                height: 1px;
+                background-color: var(--white);
+                transform-origin: left;
+            }
+
+            .label-text {
+                padding: 4px 8px;
+                font-family: "Geist Mono", monospace;
+                white-space: nowrap;
+                text-transform: uppercase;
+                background-color: transparent;
+                color: var(--white);
+                font-size: 10px;
+                font-weight: normal;
+                letter-spacing: 0.05em;
+            }
+        </style></main><footer id="site-footer" class="mobile-controls sandbox-controls"><nav></nav><button id="open-in-new-window" tabindex="0" style="transform:none"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path></svg><span>Open in new window</span></button></footer></div><!--$--><!--/$--><script>requestAnimationFrame(function(){$RT=performance.now()});</script><script src="/_next/static/chunks/webpack-4b8f35d947c657af.js" id="_R_" async=""></script><script>$RB=[];$RV=function(a){$RT=performance.now();for(var b=0;b<a.length;b+=2){var c=a[b],e=a[b+1];null!==e.parentNode&&e.parentNode.removeChild(e);var f=c.parentNode;if(f){var g=c.previousSibling,h=0;do{if(c&&8===c.nodeType){var d=c.data;if("/$"===d||"/&"===d)if(0===h)break;else h--;else"$"!==d&&"$?"!==d&&"$~"!==d&&"$!"!==d&&"&"!==d||h++}d=c.nextSibling;f.removeChild(c);c=d}while(c);for(;e.firstChild;)f.insertBefore(e.firstChild,c);g.data="$";g._reactRetry&&requestAnimationFrame(g._reactRetry)}}a.length=0};
+$RC=function(a,b){if(b=document.getElementById(b))(a=document.getElementById(a))?(a.previousSibling.data="$~",$RB.push(a,b),2===$RB.length&&("number"!==typeof $RT?requestAnimationFrame($RV.bind(null,$RB)):(a=performance.now(),setTimeout($RV.bind(null,$RB),2300>a&&2E3<a?2300-a:$RT+300-a)))):b.parentNode.removeChild(b)};$RC("B:0","S:0")</script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\n3:I[99630,[],\"\"]\n4:I[1380,[],\"\"]\n5:I[67090,[\"37064\",\"static/chunks/37064-dc9287fc935f4c01.js\",\"92537\",\"static/chunks/92537-1994b518aa216891.js\",\"8435\",\"static/chunks/8435-240a5f3aae416c2a.js\",\"49395\",\"static/chunks/49395-a88ab8aae7c97016.js\",\"76392\",\"static/chunks/76392-641820a54eb08b50.js\",\"44709\",\"static/chunks/44709-7bfee0ddb3d83f16.js\",\"94320\",\"static/chunks/app/react/scroll-velocity-linked-offset/page-2fc154556b14ec65.js\"],\"ExampleTemplate\"]\n6:I[23439,[\"37064\",\"static/chunks/37064-dc9287fc935f4c01.js\",\"92537\",\"static/chunks/92537-1994b518aa216891.js\",\"8435\",\"static/chunks/8435-240a5f3aae416c2a.js\",\"49395\",\"static/chunks/49395-a88ab8aae7c97016.js\",\"76392\",\"static/chunks/76392-641820a54eb08b50.js\",\"44709\",\"static/chunks/44709-7bfee0ddb3d83f16.js\",\"94320\",\"static/chunks/app/react/scroll-velocity-linked-offset/page-2fc154556b14ec65.js\"],\"default\"]\n7:I[30887,[],\"OutletBoundary\"]\n8:\"$Sreact.suspense\"\na:I[30887,[],\"ViewportBoundary\"]\nc:I[30887,[],\"MetadataBoundary\"]\ne:I[15718,[],\"\"]\n:HL[\"/_next/static/css/9f91f3d6bd8aaef5.css\",\"style\"]\n:HL[\"/_next/static/css/b7ff4abf24a87933.css\",\"style\"]\n"])</script><script>self.__next_f.push([1,"0:{\"P\":null,\"b\":\"oRMYJrMfOMX-NXUXZ7xBG\",\"c\":[\"\",\"react\",\"scroll-velocity-linked-offset\"],\"q\":\"\",\"i\":false,\"f\":[[[\"\",{\"children\":[\"react\",{\"children\":[\"scroll-velocity-linked-offset\",{\"children\":[\"__PAGE__\",{}]}]}]},\"$undefined\",\"$undefined\",true],[[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/9f91f3d6bd8aaef5.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]],\"$L2\"]}],{\"children\":[[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L3\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L4\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L3\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L4\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[[\"$\",\"$1\",\"c\",{\"children\":[[\"$\",\"$L5\",null,{\"id\":\"scroll-velocity-linked-offset\",\"title\":\"Scroll velocity: 3D planes\",\"description\":\"A 3D carousel with scroll velocity-linked wave effect using Motion for React.\",\"author\":\"joelbqz\",\"isPlus\":true,\"features\":{\"AnimatePresence\":\"react-animate-presence\",\"motion\":\"react-motion-component\",\"useMotionValue\":\"react-motion-value\",\"useMotionValueEvent\":\"react-use-motion-value-event\",\"useSpring\":\"react-use-spring\",\"useTransform\":\"react-use-transform\",\"useVelocity\":\"react-use-velocity\",\"animate\":\"react-animation#basic-animations\",\"viewport\":\"react-scroll-animations#scroll-triggered-animations\",\"drag\":\"react-gestures#drag\"},\"required\":\"$undefined\",\"showRefresh\":\"$undefined\",\"theme\":\"dark\",\"prevExample\":\"scroll-triggered\",\"nextExample\":\"scroll-zoom-hero\",\"platform\":\"react\",\"tutorial\":true,\"children\":[\"$\",\"$L6\",null,{}]}],[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/b7ff4abf24a87933.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]],[\"$\",\"$L7\",null,{\"children\":[\"$\",\"$8\",null,{\"name\":\"Next.MetadataOutlet\",\"children\":\"$@9\"}]}]]}],{},null,false,false]},null,false,false]},null,false,false]},null,false,false],[\"$\",\"$1\",\"h\",{\"children\":[null,[\"$\",\"$La\",null,{\"children\":\"$@b\"}],[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$Lc\",null,{\"children\":[\"$\",\"$8\",null,{\"name\":\"Next.Metadata\",\"children\":\"$@d\"}]}]}],null]}],false]],\"m\":\"$undefined\",\"G\":[\"$e\",[]],\"S\":true}\n"])</script><script>self.__next_f.push([1,"f:I[56957,[\"7177\",\"static/chunks/app/layout-62d0646f25d4f7da.js\"],\"Auth\"]\n10:I[79716,[\"7177\",\"static/chunks/app/layout-62d0646f25d4f7da.js\"],\"AdTracking\"]\n"])</script><script>self.__next_f.push([1,"2:[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[\"$\",\"body\",null,{\"children\":[\"$\",\"$Lf\",null,{\"children\":[\"$\",\"$L10\",null,{\"children\":[\"$\",\"$L3\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L4\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}]}]}]}]\n"])</script><script>self.__next_f.push([1,"b:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\n"])</script><script>self.__next_f.push([1,"11:I[60214,[],\"IconMark\"]\n"])</script><script>self.__next_f.push([1,"d:[[\"$\",\"title\",\"0\",{\"children\":\"Scroll velocity: 3D planes — Motion for React Example\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"A 3D carousel with scroll velocity-linked wave effect using Motion for React. View and copy the source code, learn which APIs are used and read the documentation.\"}],[\"$\",\"meta\",\"2\",{\"name\":\"creator\",\"content\":\"Motion\"}],[\"$\",\"meta\",\"3\",{\"name\":\"publisher\",\"content\":\"Motion\"}],[\"$\",\"link\",\"4\",{\"rel\":\"canonical\",\"href\":\"https://examples.motion.dev/react/scroll-velocity-linked-offset\"}],[\"$\",\"meta\",\"5\",{\"property\":\"og:title\",\"content\":\"Scroll velocity: 3D planes\"}],[\"$\",\"meta\",\"6\",{\"property\":\"og:description\",\"content\":\"A 3D carousel with scroll velocity-linked wave effect using Motion for React. View and copy the source code, learn which APIs are used and read the documentation.\"}],[\"$\",\"meta\",\"7\",{\"property\":\"og:site_name\",\"content\":\"Motion examples\"}],[\"$\",\"meta\",\"8\",{\"property\":\"og:image\",\"content\":\"https://examples.motion.dev/social/react/scroll-velocity-linked-offset.png\"}],[\"$\",\"meta\",\"9\",{\"property\":\"og:image:secure_url\",\"content\":\"/social/react/scroll-velocity-linked-offset.png\"}],[\"$\",\"meta\",\"10\",{\"property\":\"og:image:alt\",\"content\":\"Scroll velocity: 3D planes\"}],[\"$\",\"meta\",\"11\",{\"property\":\"og:image:width\",\"content\":\"1200\"}],[\"$\",\"meta\",\"12\",{\"property\":\"og:image:height\",\"content\":\"630\"}],[\"$\",\"meta\",\"13\",{\"property\":\"og:type\",\"content\":\"website\"}],[\"$\",\"meta\",\"14\",{\"name\":\"twitter:card\",\"content\":\"summary_large_image\"}],[\"$\",\"meta\",\"15\",{\"name\":\"twitter:site\",\"content\":\"@mattgperry\"}],[\"$\",\"meta\",\"16\",{\"name\":\"twitter:creator\",\"content\":\"@mattgperry\"}],[\"$\",\"meta\",\"17\",{\"name\":\"twitter:title\",\"content\":\"Scroll velocity: 3D planes\"}],[\"$\",\"meta\",\"18\",{\"name\":\"twitter:description\",\"content\":\"A 3D carousel with scroll velocity-linked wave effect using Motion for React. View and copy the source code, learn which APIs are used and read the documentation.\"}],[\"$\",\"meta\",\"19\",{\"name\":\"twitter:image\",\"content\":\"https://examples.motion.dev/social/react/scroll-velocity-linked-offset.png\"}],[\"$\",\"meta\",\"20\",{\"name\":\"twitter:image:secure_url\",\"content\":\"/social/react/scroll-velocity-linked-offset.png\"}],[\"$\",\"meta\",\"21\",{\"name\":\"twitter:image:alt\",\"content\":\"Scroll velocity: 3D planes\"}],[\"$\",\"meta\",\"22\",{\"name\":\"twitter:image:width\",\"content\":\"1200\"}],[\"$\",\"meta\",\"23\",{\"name\":\"twitter:image:height\",\"content\":\"630\"}],[\"$\",\"link\",\"24\",{\"rel\":\"icon\",\"href\":\"/icon.png?2869c5a378bc205a\",\"type\":\"image/png\",\"sizes\":\"64x64\"}],[\"$\",\"$L11\",\"25\",{}]]\n"])</script><script>self.__next_f.push([1,"9:null\n"])</script><next-route-announcer style="position: absolute;"><template shadowrootmode="open"><div aria-live="assertive" id="__next-route-announcer__" role="alert" style="position: absolute; border: 0px; height: 1px; margin: -1px; padding: 0px; width: 1px; clip: rect(0px, 0px, 0px, 0px); overflow: hidden; white-space: nowrap; overflow-wrap: normal;"></div></template></next-route-announcer><div id="gtx-trans" style="position: absolute; left: 480px; top: 143.8px;"><div class="gtx-trans-icon"></div></div></body></html>
