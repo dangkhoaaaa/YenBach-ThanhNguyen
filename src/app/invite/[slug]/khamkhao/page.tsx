@@ -79,11 +79,11 @@ export default function WeddingKhamKhaoPage() {
         ))}
       </div>
 
-      {currentUrl && (
+      {/* {currentUrl && (
         <div className="w-full mt-4 flex justify-center bg-black py-6">
           <InviteQr value={currentUrl} />
         </div>
-      )}
+      )} */}
     </main>
   );
 }
