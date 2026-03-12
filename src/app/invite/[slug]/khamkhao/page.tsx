@@ -144,14 +144,25 @@ export default function WeddingKhamKhaoPage() {
             />
 
             {index === 4 && (
-              <div className="mt-4 mb-2 flex justify-center gap-4">
+              <div className="mt-6 mb-4 flex justify-center gap-10">
                 <button
                   type="button"
                   onClick={() => setIsRsvpOpen(true)}
-                  className="px-8 py-3 rounded-full text-xs sm:text-sm font-semibold tracking-[0.18em] uppercase text-white shadow-lg hover:opacity-90 active:scale-[0.98] transition-all"
                   style={{
+                    minWidth: 260,
+                    height: 64,
+                    borderRadius: 999,
                     background:
-                      "linear-gradient(90deg, #ff7ac7 0%, #ff8bb5 50%, #7f7dff 100%)",
+                      "linear-gradient(90deg, #fef9c3 0%, #fed7aa 100%)",
+                    border: "none",
+                    fontSize: 16,
+                    letterSpacing: "0.18em",
+                    textTransform: "uppercase",
+                    fontWeight: 600,
+                    color: "#374151",
+                    boxShadow: "0 14px 30px rgba(148, 92, 58, 0.35)",
+                    cursor: "pointer",
+                    padding: "0 32px",
                   }}
                 >
                   Gửi xác nhận
@@ -159,10 +170,21 @@ export default function WeddingKhamKhaoPage() {
                 <button
                   type="button"
                   onClick={() => setIsMapOpen(true)}
-                  className="px-8 py-3 rounded-full text-xs sm:text-sm font-semibold tracking-[0.18em] uppercase text-white shadow-lg hover:opacity-90 active:scale-[0.98] transition-all"
                   style={{
+                    minWidth: 260,
+                    height: 64,
+                    borderRadius: 999,
                     background:
-                      "linear-gradient(90deg, #4facfe 0%, #4f7bfe 50%, #7366ff 100%)",
+                      "linear-gradient(90deg, #e5e7eb 0%, #d1d5db 100%)",
+                    border: "none",
+                    fontSize: 16,
+                    letterSpacing: "0.18em",
+                    textTransform: "uppercase",
+                    fontWeight: 600,
+                    color: "#374151",
+                    boxShadow: "0 14px 30px rgba(55, 65, 81, 0.25)",
+                    cursor: "pointer",
+                    padding: "0 32px",
                   }}
                 >
                   Xem bản đồ
