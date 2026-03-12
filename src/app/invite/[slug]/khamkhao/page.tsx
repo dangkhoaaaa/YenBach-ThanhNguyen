@@ -32,6 +32,7 @@ export default function WeddingKhamKhaoPage() {
   const [cardId, setCardId] = useState<string | null>(null);
   const [isRsvpOpen, setIsRsvpOpen] = useState(false);
   const [isMapOpen, setIsMapOpen] = useState(false);
+  const [activeSign, setActiveSign] = useState<0 | 1>(0);
   const [name, setName] = useState("");
   const [wish, setWish] = useState("");
   const [isJoining, setIsJoining] = useState(true);
@@ -54,7 +55,8 @@ export default function WeddingKhamKhaoPage() {
   }, []);
 
   useEffect(() => {
-    const finalSlug = (slug as string | undefined) ?? DEFAULT_KHAMKHAO_SLUG;
+    // Thiệp 2 luôn dùng slug cố định để không phụ thuộc URL (/invite/yb/khamkhao vẫn ok)
+    const finalSlug = DEFAULT_KHAMKHAO_SLUG;
     const fetchCard = async () => {
       try {
         const res = await fetch(`${API_BASE}/cards/slug/${finalSlug}`);
@@ -129,8 +131,123 @@ export default function WeddingKhamKhaoPage() {
     };
   }, [handleFirstInteraction]);
 
+  useEffect(() => {
+    const id = window.setInterval(() => {
+      setActiveSign((prev) => (prev === 0 ? 1 : 0));
+    }, 5000);
+    return () => window.clearInterval(id);
+  }, []);
+
+  const HangingSign = ({
+    visible,
+    text,
+    onClick,
+    gradient,
+  }: {
+    visible: boolean;
+    text: string;
+    onClick: () => void;
+    gradient: string;
+  }) => {
+    return (
+      <button
+        type="button"
+        onClick={onClick}
+        aria-hidden={!visible}
+        style={{
+          position: "absolute",
+          inset: 0,
+          width: 220,
+          height: 44,
+          margin: "0 auto",
+          border: "none",
+          background: gradient,
+          borderRadius: 14,
+          boxShadow: "0 10px 22px rgba(17,24,39,0.18)",
+          cursor: "pointer",
+          color: "#1f2937",
+          letterSpacing: "0.12em",
+          textTransform: "uppercase",
+          fontWeight: 700,
+          fontSize: 11,
+          transform: visible ? "rotate(-1.5deg)" : "rotate(-1.5deg) translateY(-6px)",
+          opacity: visible ? 1 : 0,
+          pointerEvents: visible ? "auto" : "none",
+          transition: "opacity 350ms ease, transform 350ms ease",
+        }}
+      >
+        {text}
+      </button>
+    );
+  };
+
   return (
-    <main className="min-h-screen bg-white flex flex-col items-center justify-start relative">
+    <main
+      className="min-h-screen bg-white flex flex-col items-center justify-start relative"
+      style={{ paddingTop: 74 }}
+    >
+      <div
+        style={{
+          position: "fixed",
+          top: 0,
+          left: 0,
+          right: 0,
+          zIndex: 30,
+          pointerEvents: "none",
+          padding: "10px 12px 0",
+        }}
+      >
+        <div
+          style={{
+            position: "relative",
+            width: 220,
+            height: 58,
+            margin: "0 auto",
+            pointerEvents: "auto",
+          }}
+        >
+          {/* dây treo */}
+          <div
+            style={{
+              position: "absolute",
+              left: 28,
+              top: 0,
+              width: 2,
+              height: 18,
+              background: "rgba(107,114,128,0.55)",
+              borderRadius: 999,
+              transform: "rotate(-8deg)",
+            }}
+          />
+          <div
+            style={{
+              position: "absolute",
+              right: 28,
+              top: 0,
+              width: 2,
+              height: 18,
+              background: "rgba(107,114,128,0.55)",
+              borderRadius: 999,
+              transform: "rotate(8deg)",
+            }}
+          />
+
+          <div style={{ position: "absolute", left: 0, right: 0, top: 14, height: 44 }}>
+            <HangingSign
+              visible={activeSign === 0}
+              text="Xác nhận tham gia"
+              onClick={() => setIsRsvpOpen(true)}
+              gradient="linear-gradient(90deg,#fde68a 0%,#fecaca 55%,#fbcfe8 100%)"
+            />
+            <HangingSign
+              visible={activeSign === 1}
+              text="Xem bản đồ"
+              onClick={() => setIsMapOpen(true)}
+              gradient="linear-gradient(90deg,#bfdbfe 0%,#c7d2fe 55%,#e9d5ff 100%)"
+            />
+          </div>
+        </div>
+      </div>
       <div className="w-full max-w-3xl flex flex-col items-center gap-4 p-4">
         {PHOTOS.map((src, index) => (
           <div key={src} className="w-full">
@@ -143,54 +260,7 @@ export default function WeddingKhamKhaoPage() {
               sizes="100vw"
             />
 
-            {index === 4 && (
-              <div className="mt-6 mb-4 flex justify-center gap-10">
-                <button
-                  type="button"
-                  onClick={() => setIsRsvpOpen(true)}
-                  style={{
-                    minWidth: 260,
-                    height: 64,
-                    borderRadius: 999,
-                    background:
-                      "linear-gradient(90deg, #fef9c3 0%, #fed7aa 100%)",
-                    border: "none",
-                    fontSize: 16,
-                    letterSpacing: "0.18em",
-                    textTransform: "uppercase",
-                    fontWeight: 600,
-                    color: "#374151",
-                    boxShadow: "0 14px 30px rgba(148, 92, 58, 0.35)",
-                    cursor: "pointer",
-                    padding: "0 32px",
-                  }}
-                >
-                  Gửi xác nhận
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setIsMapOpen(true)}
-                  style={{
-                    minWidth: 260,
-                    height: 64,
-                    borderRadius: 999,
-                    background:
-                      "linear-gradient(90deg, #e5e7eb 0%, #d1d5db 100%)",
-                    border: "none",
-                    fontSize: 16,
-                    letterSpacing: "0.18em",
-                    textTransform: "uppercase",
-                    fontWeight: 600,
-                    color: "#374151",
-                    boxShadow: "0 14px 30px rgba(55, 65, 81, 0.25)",
-                    cursor: "pointer",
-                    padding: "0 32px",
-                  }}
-                >
-                  Xem bản đồ
-                </button>
-              </div>
-            )}
+            {index === 4 && <div style={{ height: 6 }} />}
           </div>
         ))}
       </div>
