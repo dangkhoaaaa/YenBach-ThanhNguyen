@@ -582,7 +582,7 @@ export default function WeddingKhamKhaoPage() {
             >
               <iframe
                 title="Bản đồ đám cưới"
-                src="https://www.google.com/maps?q=10.015035,105.069077&z=17&output=embed"
+                src="https://www.google.com/maps?q=9.963447,105.100299&z=17&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: "none" }}
