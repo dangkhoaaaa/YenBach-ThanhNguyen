@@ -15,7 +15,7 @@ const PHOTOS = [
   "https://res.cloudinary.com/dpxx4z2on/image/upload/v1773160337/7_lbwkun.jpg",
   "https://res.cloudinary.com/dpxx4z2on/image/upload/v1773160337/8_kpwb5y.jpg",
   "https://res.cloudinary.com/dpxx4z2on/image/upload/v1773160337/9_uiwh7r.jpg",
-  "https://res.cloudinary.com/dpxx4z2on/image/upload/v1773160336/10_oowbnc.jpg",
+  "https://res.cloudinary.com/dpxx4z2on/image/upload/v1774017570/z7641332869606_8ceac4127c1459861086de25f452e37a_wedvmx.jpg",
 ];
 
 const MUSIC_URL =
