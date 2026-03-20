@@ -7,7 +7,7 @@ import { InviteQr } from "@/app/components/InviteQr";
 
 const PHOTOS = [
   "https://res.cloudinary.com/dpxx4z2on/image/upload/v1773160336/1_jhpokn.jpg",
-  "https://res.cloudinary.com/dpxx4z2on/image/upload/v1773160336/2_ujlysk.jpg",
+  "https://res.cloudinary.com/dpxx4z2on/image/upload/v1774020490/222_ofdpib.jpg",
   "https://res.cloudinary.com/dpxx4z2on/image/upload/v1773160336/3_zt72xs.jpg",
   "https://res.cloudinary.com/dpxx4z2on/image/upload/v1773160336/4_iro5eb.jpg",
   "https://res.cloudinary.com/dpxx4z2on/image/upload/v1773160336/5_avrlzf.jpg",

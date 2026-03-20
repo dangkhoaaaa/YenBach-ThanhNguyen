@@ -6,7 +6,7 @@ import { useParams } from "next/navigation";
 
 const PHOTOS = [
   "https://res.cloudinary.com/dpxx4z2on/image/upload/v1772868227/1_xrmtuz.jpg",
-  "https://res.cloudinary.com/dpxx4z2on/image/upload/v1772868228/2_s2hwqk.jpg",
+  "https://res.cloudinary.com/dpxx4z2on/image/upload/v1774020490/111_k0zy2v.jpg",
   "https://res.cloudinary.com/dpxx4z2on/image/upload/v1773161932/4_1_dx0yib.jpg",
   "https://res.cloudinary.com/dpxx4z2on/image/upload/v1772868228/3_kcjeia.jpg",
   "https://res.cloudinary.com/dpxx4z2on/image/upload/v1772868227/5_jx44zg.jpg",
